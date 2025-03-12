@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Northwestern Football 2024 Tickets</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="big-title">Northwestern Football 2024 Tickets</h1>
+    <section aria-label="Picture carousel">
+      <div class="carousel-container">
+        <article class="carousel-slide" aria-live="polite"></article>
+        <nav aria-label="Picture carousel navigation">
+          <button class="prev-btn">Previous</button>
+          <button class="next-btn">Next</button>
+        </nav>
+      </div>
+    </section>
+    <section class="home-schedule" aria-label="Home Game Schedule">
+      <h2>2024 Home Schedule</h2>
+      <ul class="opponents-container">
+          <li  class="game">
+            <h3>Miami (OH)</h3>
+            <p>Date: August 31, 2024</p>
+            <p>Location: Northwestern Medicine Field</p>
+          </li>
+          <li class="game">
+            <h3>Duke</h3>
+            <p>Date: September 6, 2024</p>
+            <p>Location: Northwestern Medicine Field</p>
+          </li>
+          <li class="game">
+            <h3>Eastern Illinois</h3>
+            <p>Date: September 14, 2024</p>
+            <p>Location: Northwestern Medicine Field</p>
+          </li>
+          <li class="game">
+            <h3>Indiana</h3>
+            <p>Date: October 5, 2024</p>
+            <p>Location: Northwestern Medicine Field</p>
+          </li>
+          <li class="game">
+            <h3>Wisconsin</h3>
+            <p>Date: October 19, 2024</p>
+            <p>Location: Northwestern Medicine Field</p>
+          </li>
+          <li class="game">
+            <h3>Ohio State</h3>
+            <p>Date: November 16, 2024</p>
+            <p>Location: Wrigley Field</p>
+          </li>
+          <li class="game">
+            <h3>Illinois</h3>
+            <p>Date: November 30, 2024</p>
+            <p>Location: Wrigley Field</p>
+          </li>
+        </ul>
+    </section>
+    <h2>Fill out this form to be notified when tickets go on sale!</h2>
+    <form id="form" action="/submit" method="POST">
+      <div>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required aria-required="true">
+      </div>
+
+      <div>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required aria-required="true">
+      </div>
+      
+      <div>
+        <label for="tel">Phone Number</label>
+        <input type="tel" id="tel" name="tel" required aria-required="true"/>
+      </div>
+      <div>
+        <label for="games">Games Interested In:</label>
+        <input type="text" id="games" name="games" required aria-required="true">
+      </div>
+      <div>
+        <label for="price">Price Willing To Pay Per Ticket: </label>
+      </div>
+      <div>
+        <input
+        type="range"
+        name="price"
+        id="price"
+        min="0"
+        max="500"
+        step="10"
+        value="0" />
+        <output class="price-output" for="price"></output>
+      </div>
+      <div class="submit-container">
+        <button class="submit-button" aria-label="Submit button" type="submit">Submit</button>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

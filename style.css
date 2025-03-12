@@ -1,0 +1,121 @@
+.big-title {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.carousel-container {
+    border: 8px solid #4E2A84;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px;
+}
+
+.carousel-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 75%;
+    width: 100px;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 2px;
+    background-color: #4E2A84;
+    color: white;
+    font-weight: bold;
+}
+
+.prev-btn {
+    left: 20px;
+}
+
+.next-btn {
+    right: 20px;
+}
+
+input[type=text], input[type=email], input[type=tel], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.submit-container {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.submit-button {
+    position: absolute;
+    width: 100px;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 2px solid #4E2A84;
+    background-color: #4E2A84;
+    color: white;
+    font-weight: bold;
+}
+
+.prev-btn:hover,
+.next-btn:hover,
+.submit-button:hover {
+    background-color: #321b58;
+    cursor: pointer;
+}
+
+.home-schedule {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #4E2A84;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.home-schedule h2 {
+    text-align: center;
+    color: #4E2A84;
+}
+
+.opponents-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.game {
+    background-color: white;
+    border: 1px solid #4E2A84;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Soft shadow for effect */
+}
+
+@media (max-width: 300px) {
+    .opponents-container {
+        flex-direction: column; /* Stack vertically on small screens */
+        align-items: center; /* Center items */
+    }
+}
+
+.opponents-container {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
